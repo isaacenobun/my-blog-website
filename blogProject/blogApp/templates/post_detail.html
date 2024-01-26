@@ -1,0 +1,17 @@
+{% extends 'base2.html' %}
+
+
+{% block content %}
+
+<div style="margin: 25px;">
+
+    <h1>{{post.title}}</h1>
+    <p>By <strong>{{post.author}}</strong></p>
+    
+    <p>{{post.content|safe}}</p>
+    <p style="font-size: 12px;">Created on {{post.created_on}} <br>
+        Last modified on {{post.updated_on}}</p>
+</div>
+    
+{% endblock content %}
+    
