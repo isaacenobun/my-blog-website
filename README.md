@@ -1,10 +1,9 @@
 # my-blog-website
 
-I built a blog platform that allows me or any other authorized individual add/edit posts that can be read by the public. I'm using the django framework for the backend, Sqlite database and bootswatch(bootstrap) for the frontend.
+I developed a blog platform that enables authorized individuals, including myself, to add/edit posts accessible to the public. The backend is powered by the Django framework, with the data stored in an SQLite database. For the frontend, I integrated Bootswatch, an extension of Bootstrap.
 
 ## Table of Contents
 
-- [Project Title](#project-title)
 - [Description](#description)
 - [Implementation](#Implementation)
 - [Getting Started](#getting-started)
@@ -13,24 +12,24 @@ I built a blog platform that allows me or any other authorized individual add/ed
 
 ## Description
 
-Provide a more detailed description of your project. Explain its purpose, features, and any other relevant information.
+This project involves the development of a web application using Django. The primary purpose of the application is to manage and display posts, utilizing various Django features and best practices.
 
 ## Implementation
 <ul>
-  <li>I used a virtual environment in this project - 'python3 -m venv ...'</li>
-  <li>Installed django with pip3</li>
-  <li>I used the default SQlite database for this project</li>
-  <li>The data models migrated include a 'Post' class which has a title, author, created_on, updated_on, content and status field. Author is designed as a foreign key linked to django's native User model for user authentication.</li>
-  <li>Post additions and edits will be done from the django admin dashboard and so some code was written in admin.py to organise and filter the dashboard.</li>
-  <li>I used class based views in this project</li>
-  <li></li>
+  <li>Set up a virtual environment for this project using 'python3 -m venv ...'</li>
+<li>Installed Django using pip3</li>
+<li>Utilized the default SQLite database for this project</li>
+<li>Implemented data models, including a 'Post' class featuring fields such as title, author, created_on, updated_on, content, and status. The 'Author' field is designed as a foreign key linked to Django's native User model for user authentication.</li>
+<li>Configured post additions and edits through the Django admin dashboard, incorporating custom code in admin.py to enhance organization and filtering.</li>
+<li>Utilized class-based views in combination with a function-based view to implement the search functionality. <small>Future plans include implementing real-time search updates with JavaScript.</small></li>
+<li>Enabled HTML and CSS styling for post contents entered in the Django admin dashboard, using the 'safe' Django template language (DTL) filter.</li>
 </ul>
 
 ## Getting Started
 
 To run this blog locally on your machine.
 <ul>
-  <li>Save the file locally.</li>
+  <li>Save the [file](https://github.com/isaacenobun/my-blog-website) locally.</li>
   <li>Open the folder my-blog-website, and type the following commands one after the other in your terminal<br>
   - source 'Env/bin/activate'<br>
   - cd blogProject<br>
@@ -39,7 +38,7 @@ To run this blog locally on your machine.
 
 ### Prerequisites
 
-You need [python](www.python.org) installed on your system to run this successfully on your local machine.
+You need [python](https://www.python.org) installed on your system to run this successfully on your local machine.
 
 ## Acknowledgements
 

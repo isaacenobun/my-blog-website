@@ -37,8 +37,9 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/lux/bootstrap.min.css
                 </div>
               </li> -->
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-sm-2" type="search" placeholder="Search">
+            <form class="d-flex" role="search" method="POST" action="{% url 'search_posts' %}">
+              {% csrf_token %}
+              <input style="color: black;" class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search" name="searched">
               <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
             </form>
           </div>

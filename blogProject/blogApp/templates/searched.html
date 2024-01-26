@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if searched %}
+        {% for post in search_results %}
+        <div class="card text-white bg-primary mb-3" style="max-width: 50rem; margin: 20px auto;">
+            <div class="card-header">Last updated on {{post.updated_on|date:"M d, Y"}}</div>
+            <div class="card-body">
+                <h4 class="card-title" style="display: inline-block;">{{post.title}}
+                    <div class="text-right" style="display: inline-block; margin-left: 20px; font-size: 10px;">
+                        - by {{post.author}} on {{post.created_on|date:"M d, Y"}} 
+                    </div>
+                </h4>
+            <p class="card-text">{{post.content|truncatechars:350}}</p>
+            </div>
+            <a href="{% url 'PostDetail' post.slug %}" class="btn btn-secondary">Read more</a>
+        </div>
+        {% endfor %}
+{% else %}
+    <h1 style="max-width: auto; margin: 50px; text-align: center;">You forgot to search</h1>
+{% endif %}
+    
+{% endblock content %}
+    
