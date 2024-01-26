@@ -29,7 +29,7 @@ This project involves the development of a web application using Django. The pri
 
 To run this blog locally on your machine.
 <ul>
-  <li>Save the [file](https://github.com/isaacenobun/my-blog-website) locally.</li>
+  <li>Save the file locally</li>
   <li>Open the folder my-blog-website, and type the following commands one after the other in your terminal<br>
   - source 'Env/bin/activate'<br>
   - cd blogProject<br>
